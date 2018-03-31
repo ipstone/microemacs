@@ -1,0 +1,45 @@
+; -!- emf -!-
+; This is part of the JASSPA MicroEmacs macro files
+; Copyright (C) 2000-2009 JASSPA (www.jasspa.com)
+; See the file me.emf for copying and conditions.
+;
+; Created:     Wed Aug 23 2000
+; Synopsis:    Hilighting for diff files
+; Authors:     Jon Green
+;
+; Notes:
+;     This has been extrapolated from the tools.emf file that originally
+;     handled the diff utility and associated hilighting.
+;
+!if &not &exi .hilight.diff
+    set-variable .hilight.diff  &pinc .hilight.next 1
+!endif
+
+!if &band .hilight.flags 0x02
+    0 hilight .hilight.diff 0                 $global-scheme
+    ; Gnu diff utility, uses --context
+    hilight .hilight.diff 0x102 "! "          .scheme.no1
+    hilight .hilight.diff 0x102 "+ "          .scheme.no1
+    hilight .hilight.diff 0x102 "- "          .scheme.no1
+    ; Regular diff utility. May be a bit too colored !!
+    hilight .hilight.diff 0x102 "<"           .scheme.no2
+    hilight .hilight.diff 0x102 ">"           .scheme.prepro
+    ; Common
+    hilight .hilight.diff 0x102 "*\\*\\*\\*"  .scheme.keyword
+    hilight .hilight.diff 0x102 "*\\*\\*"     .scheme.no2
+    hilight .hilight.diff 0x102 "--- "        .scheme.prepro
+    hilight .hilight.diff 0x102 "Only"        .scheme.comment
+    hilight .hilight.diff 0x102 "Files"       .scheme.comment
+
+!endif
+
+define-macro fhook-diff
+    ; Set up the buffer modes
+    -1 buffer-mode "time"
+    !if &band .hilight.flags 0x02
+        set-variable $buffer-hilight .hilight.diff
+    !endif
+    buffer-init-hooks
+!emacro
+
+buffer-init-fhook "diff"
