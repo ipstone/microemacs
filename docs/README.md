@@ -4,7 +4,7 @@ Microemacs is sleek, portable emacs editor from 1985
 (https://en.wikipedia.org/wiki/MicroEMACS). It shines over other editors
 over speed, and usability. 
 
-Over time, there are various versions, notably:
+### Over time, there are various versions, notably:
     - https://github.com/torvalds/uemacs
     - Jasspa's microemacs: http://www.jasspa.com/ Jasspa's microemacs
         has gone a long way in supporting multiple OSs, and extensive
