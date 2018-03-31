@@ -5,10 +5,10 @@ Microemacs is sleek, portable emacs editor from 1985
 over speed, and usability. 
 
 ### Over time, there are various versions, notably:
-    - https://github.com/torvalds/uemacs
-    - Jasspa's microemacs: http://www.jasspa.com/ Jasspa's microemacs
-        has gone a long way in supporting multiple OSs, and extensive
-        macros built over the years.
+    - [Linus' microemacs](https://github.com/torvalds/uemacs)
+    - [Jasspa's microemacs] (http://www.jasspa.com)
+        Jasspa's microemacs has gone a long way in supporting multiple OSs, and 
+        extensive macros built over the years.
 
 This site is a fork/clone of Jasspa's microemacs versioned 20100503. The
 *goal* is to provide an one-stop experience for obtaining, installing and
