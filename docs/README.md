@@ -5,8 +5,8 @@ Microemacs is sleek, portable emacs editor from 1985
 over speed, and usability. 
 
 ### Over time, there are various versions, notably:
-    - [Linus' microemacs](https://github.com/torvalds/uemacs)
-    - [Jasspa's microemacs] (http://www.jasspa.com)
+- [Linus' microemacs](https://github.com/torvalds/uemacs)
+- [Jasspa's microemacs](http://www.jasspa.com)
         Jasspa's microemacs has gone a long way in supporting multiple OSs, and 
         extensive macros built over the years.
 
@@ -29,6 +29,6 @@ base, to keep microemacs continually to shine over the time.
     - In the src folder: `./build` (assuming using *nix)
     - Copy or link the macros folder (.jasspa) to ~/.jassap :
             - Copy: `cp .jasspa ~/
-            - or Link: `ln -s .jasspa ~/.jasspa 
+            - or Link: `ln -s [path-to-jasspa]/.jasspa ~/.jasspa 
 
 
