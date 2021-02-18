@@ -25,7 +25,7 @@ base, to keep microemacs continually to shine over the time.
 ## Quick install
     (These instructions will be expanded with more info from http://www.jasspa.com/)
 
-    - Clone this repo
+    - Clone this repo: `git clone https://github.com/ipstone/microemacs`
     - In the src folder: `./build` (assuming using *nix)
     - Copy or link the macros folder (.jasspa) to ~/.jassap :
             - Copy: `cp .jasspa ~/
