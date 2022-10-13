@@ -1,4 +1,4 @@
-## General information about microemacs
+## General information about microemacs (Isaac testing around)
 
 Microemacs is sleek, portable emacs editor from 1985
 (https://en.wikipedia.org/wiki/MicroEMACS). It shines over other editors
