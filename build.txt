@@ -60,7 +60,7 @@ BUILD
             *  linux26.gmk Linux 2.6 kernels using GNU tools 
             *  mingw.gmk minGW http://www.MinGW.org using GNU tools. 
             *  osf1.gmk OSF1 using GNU tools. 
-            *  openbsd.gmk OpenBSD using GNU tools. 
+            *  openbsd.gmk OpenBSD using base tools. 
             *  openstep.mak Openstep 4.2 on NeXTstep (BSD 4.3). 
             *  sunos5.gmak Sun Solaris 5.5/6/7/8/9/10 using GNU tools 
             *  sunos5.mak Sun Solaris 5.6/7/8/9/10 native 
